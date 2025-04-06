@@ -62,24 +62,15 @@ npm run test:watch
 npm run test:ci
 ```
 
-## CI/CD Pipeline
+## CI/CD Setup
 
-The repository includes a GitHub Actions workflow configuration in `.github/workflows/ci.yml` that:
+This project uses GitHub Actions for continuous integration and deployment:
 
-1. Runs on pushes to main/master branches and on pull requests
-2. Tests the application on multiple Node.js versions (18.x, 20.x)
-3. Generates and uploads test coverage reports
-4. Automatically deploys to Vercel (when pushing to main/master)
+- Tests run on both Node.js 18.x and 20.x
+- Preview deployments are created for pull requests
+- Production deployments happen automatically when tests pass on the main branch
 
-### Setting up Vercel Deployment
-
-To enable automatic deployments to Vercel, you need to:
-
-1. Create a Vercel account and link your repository
-2. Create a Vercel project for your application
-3. Generate a Vercel token and add it as a secret in your GitHub repository:
-   - Go to Settings → Secrets → Actions
-   - Add a new secret named `VERCEL_TOKEN` with your Vercel token
+The deployment is handled by Vercel.
 
 ## Technologies Used
 
