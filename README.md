@@ -1,5 +1,5 @@
 # Faleproxy
-
+[![Faleproxy CI](https://github.com/hileamlakB/faleproxy/actions/workflows/ci.yml/badge.svg)](https://github.com/hileamlakB/faleproxy/actions/workflows/ci.yml)
 A Node.js web application that fetches a URL, replaces every instance of "Yale" with "Fale" in the document, and displays the modified content.
 
 ## Features
